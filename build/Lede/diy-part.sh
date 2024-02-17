@@ -81,9 +81,9 @@ export kernel_usage="stable"
 # git clone --depth=1 https://github.com/maglcal/helloworld.git package/luci-app-vssr
 # git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 # git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
-#git clone https://github.com/ycg31/luci-app-vssr-plus package/luci-app-vssr-plus
-#git clone https://github.com/maglcal/diy package/my
-#git clone https://github.com/maglcal/helloworld package/helloworld
+# git clone https://github.com/ycg31/luci-app-vssr-plus package/luci-app-vssr-plus
+# git clone https://github.com/maglcal/diy package/my
+# git clone https://github.com/maglcal/helloworld package/helloworld
 
 # 修改插件名字
 sed -i 's/"aMule设置"/"电驴下载"/g' `egrep "aMule设置" -rl ./`
