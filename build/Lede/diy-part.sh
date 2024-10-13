@@ -73,9 +73,12 @@ export rootfs_size="2560"
 export kernel_usage="stable"
 
 # 添加ssrplus+插件包
-rm -rf package/helloworld
-git clone https://github.com/fw876/helloworld.git package/helloworld
-git clone https://github.com/maglcal/openwrt-packages.git package/openwrt-packages
+# rm -rf package/helloworld
+# git clone https://github.com/fw876/helloworld.git package/helloworld
+# git clone https://github.com/maglcal/openwrt-packages.git package/openwrt-packages
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+sed -i "/helloworld/d" "feeds.conf.default"
+
 
 # 修改插件名字
 sed -i 's/"aMule设置"/"电驴下载"/g' `egrep "aMule设置" -rl ./`
