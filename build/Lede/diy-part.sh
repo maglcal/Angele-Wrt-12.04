@@ -78,7 +78,8 @@ export kernel_usage="stable"
 # git clone https://github.com/maglcal/openwrt-packages.git package/openwrt-packages
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 sed -i "/helloworld/d" "feeds.conf.default"
-
+echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
+git clone https://github.com/281677160/openwrt-package.git package/Angel/
 
 # 修改插件名字
 sed -i 's/"aMule设置"/"电驴下载"/g' `egrep "aMule设置" -rl ./`
