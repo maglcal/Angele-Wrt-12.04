@@ -75,7 +75,7 @@ export kernel_usage="stable"
 # 添加ssrplus+插件包
 rm -rf package/helloworld
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/helloworld
-git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/ang
 
 # git clone https://github.com/fw876/helloworld.git package/helloworld
 git clone https://github.com/maglcal/openwrt-packages.git package/openwrt-packages
