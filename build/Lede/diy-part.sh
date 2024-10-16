@@ -73,7 +73,7 @@ export rootfs_size="2560"
 export kernel_usage="stable"
 
 # 添加ssrplus+插件包
-# rm -rf package/helloworld
+rm -rf package/helloworld
 # git clone https://github.com/fw876/helloworld.git package/helloworld
 # git clone https://github.com/maglcal/openwrt-packages.git package/openwrt-packages
 # sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
