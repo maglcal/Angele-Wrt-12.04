@@ -75,13 +75,13 @@ export kernel_usage="stable"
 # 添加ssrplus+插件包
 rm -rf package/helloworld
 # git clone https://github.com/jerrykuku/lua-maxminddb.git package/helloworld
-git clone https://github.com/maglcal/openwrt-packages.git package/helloworld
+# git clone https://github.com/maglcal/openwrt-packages.git package/helloworld
 
-# git clone https://github.com/fw876/helloworld.git package/helloworld
+git clone https://github.com/fw876/helloworld.git package/helloworld
 # git clone https://github.com/maglcal/openwrt-packages.git package/openwrt-packages
-# sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
-# sed -i "/helloworld/d" "feeds.conf.default"
-# echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+sed -i "/helloworld/d" "feeds.conf.default"
+echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 # git clone https://github.com/281677160/openwrt-package.git package/Angel/
 # src-git helloworld https://github.com/fw876/helloworld
 # src-git passwall https://github.com/xiaorouji/openwrt-passwall
